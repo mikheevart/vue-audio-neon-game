@@ -1,38 +1,18 @@
-# vue-physics-game
+# 🎹 Аudio-Neon Physics Game
 
-This template should help get you started developing with Vue 3 in Vite.
+Интерактивный эмбиент-инструмент и генеративный арт-объект, созданный на **Vue 3 (Composition API)** с использованием **Vite** и встроенного **Web Audio API**.
 
-## Recommended IDE Setup
+## 🚀 Живое демо
+[Поиграть в браузере](https://mikheevart.github.io/vue-audio-neon-game/)
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## ✨ Особенности проекта
+* 💥 **Взрывная физика:** генерация радиальных импульсов (эффект салюта) при клике мыши.
+* 🎨 **Неоновый трейл:** адаптивная генерация тающих световых частиц, следующих по траектории движения объектов.
+* 🎹 **Процедурный звук:** синтез звуковых волн (`sine` и `triangle`) на лету. Каждая упавшая фигура извлекает ноту из благозвучной пентатонической шкалы Ля-минор. Высота тона напрямую зависит от масштаба объекта.
+* ⚙️ **Оптимизация памяти:** автоматическая фильтрация и сборка мусора неактивных частиц в цикле `requestAnimationFrame` для поддержания стабильных 60 FPS.
 
-## Recommended Browser Setup
-
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+## 🛠️ Стек технологий
+* **Framework:** Vue 3
+* **Build Tool:** Vite
+* **Audio Engine:** Web Audio API (OscillatorNode, GainNode)
+* **IDE:** Sublime Text (с поддержкой LSP-vue)
